@@ -17,7 +17,9 @@ class Serializer(object):
     attributes = []
     relationships = {}
 
-    def serialize(self, data, included={}, meta={}):
+    def serialize(self, data, included=None, meta=None):
+        included = included or {}
+        meta = meta or {}
         root = {}
 
         if included: 

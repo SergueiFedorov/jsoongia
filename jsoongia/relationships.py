@@ -10,7 +10,7 @@ class SerializerRelationship(object):
 
 class BelongsTo(SerializerRelationship):
     def __init__(self, reference=None):
-        super().__init__(reference)
+        super(BelongsTo, self).__init__(reference)
 
     def _build_reference(self, schema):
         return '_'.join([schema.type.replace('.', '_'), schema.ref])

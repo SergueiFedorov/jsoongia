@@ -12,7 +12,8 @@ setup(
     author_email='jon@digia.io',
     description='Framework agnostic JSON API serializer',
     keywords='JSON, JSON API, Serializeer',
-    license=open('LICENSE').read(),
+    packages=["jsoongia", "test"],
+    #license=open('LICENSE').read(),
     # See http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         'Development Status :: 3 - ALPHA',
